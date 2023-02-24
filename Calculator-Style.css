@@ -2,6 +2,9 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 
 .container {
   display: flex;
@@ -98,4 +101,8 @@ body {
     background-color: rgba(25, 155, 55, 0.2);
     padding: 10px;
     text-align: center;
+}
+
+.link,a{
+  color: #ffffff;
 }
