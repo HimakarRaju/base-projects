@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index:-10;
+background: rgb(110,105,198);
+background: linear-gradient(318deg, rgba(110,105,198,1) 10%, rgba(4,4,107,1) 15%, rgba(6,73,88,1) 93%, rgba(16,184,218,1) 95%);
+}
+
+.calculator {
+  z-index:100;
+  background: black;
+  border-radius: 5px;
+  padding: 5px;
+  width: 300px;
+  min-width: 300px;
+  box-shadow: inset 2px 2px 5px rgba(25, 255, 55, 0.2), 
+                    4px 4px 10px rgba(10, 20, 30, 0.7);
+}
+
+.output {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  background: #ffffff;
+  min-height: 50px;
+  padding: 5px;
+  margin: 0 1px 10px;
+  border-radius: 0.25rem;
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.output pre {
+  text-align: right;
+  font-size: 25px;
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  width: 288px;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.output pre::-webkit-scrollbar {
+  display: none;
+}
+
+.output #upper {
+  color: #424242;
+  font-size: 18px;
+}
+
+.input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.input button {
+  width: calc(25% - 24px);
+  height: 50px;
+  margin: 8px 12px;
+  border-radius: 50%;
+  background-color: #134fb0;
+  box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.3),
+                    1px 1px 5px rgba(94, 31, 31, 0.7);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.input button:hover {
+  background-color: #7E57C2;
+}
+
+.input button:active {
+  box-shadow: inset 1px 1px 5px rgba(94, 31, 31, 0.7),
+              inset -1px -1px 2px rgba(255, 255, 255, 0.3);
+  color: #642929;
+}
+
+.card {
+    margin-right: auto;
+    margin-left: auto;
+    width: 250px;
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(25, 155, 55, 0.2);
+    padding: 10px;
+    text-align: center;
+}
