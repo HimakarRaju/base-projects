@@ -9,8 +9,7 @@ body {
   align-items: center;
   height: 100vh;
   z-index:-10;
-background: rgb(110,105,198);
-background: linear-gradient(318deg, rgba(110,105,198,1) 10%, rgba(4,4,107,1) 15%, rgba(6,73,88,1) 93%, rgba(16,184,218,1) 95%);
+  background: url("https://getwallpapers.com/wallpaper/full/c/a/a/623961.jpg");
 }
 
 .calculator {
